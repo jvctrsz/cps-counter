@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section id="game">
+            <h1>Contador de Clicks</h1>
+            <div class="container">
+                <div class="time-container">
+                    <h3>Escolha o tempo</h3>
+                    <div class="btn-container">
+                        <button class="btn-time" number="1" id="umsec">1s</button>
+                        <button class="btn-time" number="5" id="cincosec">5s</button>
+                        <button class="btn-time" number="10" id="dezsec">10s</button>
+                        <button class="btn-time" number="15" id="quinzesec">15s</button>
+                        <button class="btn-time" number="30" id="trintasec">30s</button>
+                        <button class="btn-time" number="60" id="sessentasec">60s</button>
+                        <p id="soump"></p>
+                    </div>
+                </div>
+                <section class="game-inf-area">
+                    <div class="inf-container">
+                        <div class="cps">
+                            <span>Clicks</span>
+                            <span id="clicksChange">0</span>
+                        </div>
+                        <div class="cps-score">
+                            <span>Clicks por segundo</span>
+                            <span id="cpsChange">0.0</span>
+                        </div>
+                        <div class="time">
+                            <span>Timer</span>
+                            <span id="timerChange">0</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="game-counter-area">
+                    <div class="pointer-section">
+                        <button class="init-counter" id="start-counter">INICIAR</button>
+                        <button class="init-counter" id="area-click"></button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="resultados">
+            <div class="results-container">
+                <div class="inf-resultados" id="resultTimeDisplay"></div>
+                <div class="inf-resultados" id="resultClickDisplay"></div>
+                <div class="inf-resultados" id="resultCpsDisplay"></div>
+            </div>
+            <div class="jogar-novamente">
+                <span class="restart-question">Você deseja jogar novamente?</span>
+                <button class="restart-button" onClick="recarregarAPagina()">Jogar novamente!</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

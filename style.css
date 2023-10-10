@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #02111B;
+}
+
+main{
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+}
+
+h1{
+    margin-bottom: 100px;
+}
+
+#game{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.game-inf-area{
+    width: 800px;
+    background-color: #424549;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: linear-gradient(to bottom,#9997973f,#424549d5, #424549);
+}
+
+.inf-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inf-container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+    width: 200px;
+    height: 80px;
+    font-size: 22px;
+}
+
+.game-counter-area{
+    width: 800px;
+    height: 200px;
+    background-color: #0b1e24;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pointer-section{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.init-counter{
+    background-color: #636668;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#area-click{
+    display: none;
+}
+.init-counter:hover{
+    background-color: #a5a9ac;
+    
+}
+.time-container{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.btn-container{
+    padding: 5px;
+}
+.btn-time{
+    width: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #8f8b8b;
+}
+
+.btn-time:hover{
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.active{
+    background-color: #FFf;
+}
+
+#resultados{
+    display: none;
+    background-color:#424549;
+    padding: 50px;
+    border-radius: 30px;
+}
+.results-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    font-size: 2rem;
+}
+
+.jogar-novamente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.restart-button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #9da5af;
+    font-size: 1.2rem;
+    border: none;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.restart-button:hover{
+    background-color: #ced8e6;
+    transform: scale(1.2);
+
+}
