@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Pixelify+Sans:wght@500&family=Press+Start+2P&family=Teko&display=swap"
+        rel="stylesheet">
+
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <section id="game">
@@ -26,22 +35,22 @@
                 <section class="game-inf-area">
                     <div class="inf-container">
                         <div class="cps">
-                            <span>Clicks</span>
-                            <span id="clicksChange">0</span>
+                            <span class="visualizador-nome">Clicks</span>
+                            <span class="visualizador-numero" id="clicksChange">0</span>
                         </div>
                         <div class="cps-score">
-                            <span>Clicks por segundo</span>
-                            <span id="cpsChange">0.0</span>
+                            <span class="visualizador-nome">Clicks por segundo</span>
+                            <span class="visualizador-numero" id="cpsChange">0.0</span>
                         </div>
                         <div class="time">
-                            <span>Timer</span>
-                            <span id="timerChange">0</span>
+                            <span class="visualizador-nome">Timer</span>
+                            <span class="visualizador-numero" id="timerChange">0</span>
                         </div>
                     </div>
                 </section>
                 <section class="game-counter-area">
                     <div class="pointer-section">
-                        <button class="init-counter" id="start-counter">INICIAR</button>
+                        <button class="init-counter" id="start-counter">Clique aqui para iniciar</button>
                         <button class="init-counter" id="area-click"></button>
                     </div>
                 </section>
@@ -63,4 +72,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
