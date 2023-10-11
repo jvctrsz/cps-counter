@@ -214,13 +214,27 @@ h1{
     transform: scale(1.2);
 
 }
+   
 
-@media (max-width:420px){
+@media (max-width:500px){
     .game-inf-area{
         width: 350px;
+    }
+
+    .game-counter-area{
+        width: 350px;
+    }
+    .time-container{
+        align-self: center;
+    }
 }
 
-.game-counter-area{
-    width: 350px;
-}
+@media (min-width: 500px) and (max-width:850px){
+    .game-inf-area{
+        width: 450px;
+    }
+    
+    .game-counter-area{
+        width: 450px;
+    }
 }
