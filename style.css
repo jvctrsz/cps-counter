@@ -67,17 +67,16 @@ h1{
     margin-right: 15px;
     width: 200px;
     height: 80px;
-    font-size: 22px;
 }
 
 .visualizador-nome{
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing:1.5px;
 }
 
 .visualizador-numero{
-    font-size: 2.5rem;
+    font-size: 42px;
     font-family: var(--odibee);
 }
 
@@ -219,6 +218,17 @@ h1{
 @media (max-width:500px){
     .game-inf-area{
         width: 350px;
+    }
+
+    .visualizador-nome{
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing:1.5px;
+    }
+    
+    .visualizador-numero{
+        font-size: 30px;
+        font-family: var(--odibee);
     }
 
     .game-counter-area{
