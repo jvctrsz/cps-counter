@@ -54,7 +54,6 @@ function numberTimerValue(number) {
 
 function chooseTime(event) {
   let btnTarget = event;
-  console.log(btnTarget);
   let activeElement = document.querySelector(`button[class="btn-time active"]`);
   if (event) {
     btnTarget.classList.add("active");

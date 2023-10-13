@@ -152,7 +152,12 @@ h1{
     transition: 0.5s ease-in-out;
 }
 
+.none {
+    display: block;
+}
+
 .active{
+    display: block;
     background-color: #FFf;
     color: #000;
 }
@@ -216,6 +221,10 @@ h1{
    
 
 @media (max-width:500px){
+    h1{
+        text-align: center;
+    }
+    
     .game-inf-area{
         width: 350px;
     }
@@ -237,9 +246,16 @@ h1{
     .time-container{
         align-self: center;
     }
+    .init-counter{
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 500px) and (max-width:850px){
+    h1{
+        text-align: center;
+    }
+    
     .game-inf-area{
         width: 450px;
     }
