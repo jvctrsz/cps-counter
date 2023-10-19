@@ -18,7 +18,7 @@ observarClick.addEventListener("click", (event) => {
   chooseTime(event.target);
 });
 
-function numberTimerValue(number) {
+function numberTimerValue(number) { 
   let lockNumber = Number(number);
   timerDisplay.innerHTML = number;
 
@@ -34,7 +34,7 @@ function numberTimerValue(number) {
       lockNumber--;
       if (lockNumber < 0) {
         areaClick.style.display = "none";
-        setInterval(() => {
+        setTimeout(() => {
           gameArea.style.display = "none";
           resultArea.style.display = "block";
         }, 500);
@@ -52,6 +52,7 @@ function numberTimerValue(number) {
   });
 }
 
+
 function chooseTime(event) {
   let btnTarget = event;
   let activeElement = document.querySelector(`button[class="btn-time active"]`);
@@ -66,3 +67,5 @@ function chooseTime(event) {
 function recarregarAPagina() {
   window.location.reload();
 }
+
+
