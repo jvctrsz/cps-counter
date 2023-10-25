@@ -54,13 +54,10 @@ function numberTimerValue(number) {
 
 
 function chooseTime(event) {
-  let btnTarget = event;
-  let activeElement = document.querySelector(`button[class="btn-time active"]`);
-  if (event) {
-    btnTarget.classList.add("active");
-    if (activeElement) {
-      activeElement.classList.remove("active");
-    }
+  let escolhaTempo = document.querySelector('.chooseTimeTitle')
+  if(event){
+    escolhaTempo.style.display = 'none'
+    observarClick.style.display = 'none'
   }
 }
 
@@ -69,3 +66,11 @@ function recarregarAPagina() {
 }
 
 
+// let btnTarget = event;
+// let activeElement = document.querySelector(`button[class="btn-time active"]`);
+// if (event) {
+//   btnTarget.classList.add("active");
+//   if (activeElement) {
+//     activeElement.classList.remove("active");
+//   }
+// }
